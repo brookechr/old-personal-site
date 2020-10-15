@@ -1,2 +1,1 @@
-# brookechr.github.io
-Personal Site
+visit https://brookechr.github.io/ to view
