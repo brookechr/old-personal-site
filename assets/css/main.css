@@ -1471,7 +1471,7 @@ input, select, textarea {
 	}
 
 	article {
-		margin: 3em;
+		margin: 2em;
 	}
 
 	section > :last-child,
@@ -2232,7 +2232,6 @@ input, select, textarea {
 			#header > .container {
 				padding: 7em 0 1em 0;
 			}
-
 	}
 
 /* Large */
