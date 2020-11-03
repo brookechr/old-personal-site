@@ -276,13 +276,22 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			width: 30%;
+			width: 20%;
 			margin: 0;
 			border: solid 6px #ebebeb !important;
 		}
 
 		.image.case-study {
-			height: 400px;
+			margin: 3px;
+			height: 25rem;
+		}
+
+		.image.home {
+			margin: 3px;
+			width: 50%;
+		}
+
+		.image.personas {
 			margin: 3px;
 			border: solid 3px #ebebeb !important;
 		}
