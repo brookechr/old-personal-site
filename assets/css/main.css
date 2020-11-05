@@ -249,7 +249,8 @@ input, select, textarea {
 	}
 
 	article {
-		margin: 10em;
+		margin-left: 10em;
+		margin-right: 10em;
 	}
 
 	section > :last-child,
