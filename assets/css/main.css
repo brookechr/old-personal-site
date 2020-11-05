@@ -276,14 +276,19 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			width: 20%;
+			width: 30vw;
 			margin: 0;
 			border: solid 6px #ebebeb !important;
 		}
 
 		.image.case-study {
 			margin: 3px;
-			height: 25rem;
+			width: 90%;
+			border: solid 1px #ebebeb !important;
+		}
+
+		.figure.consistent-height {
+			height: 40vw;
 		}
 
 		.image.home {
