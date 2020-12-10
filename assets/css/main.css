@@ -182,12 +182,6 @@ input, select, textarea {
 		border-top: solid 1px #ddd;
 	}
 
-	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
-	}
-
 	p {
 		text-align: justify;
 		margin-bottom: 2em;
@@ -249,8 +243,8 @@ input, select, textarea {
 	}
 
 	article {
-		margin-left: 10em;
-		margin-right: 10em;
+		margin-left: 8em;
+		margin-right: 8em;
 	}
 
 	section > :last-child,
@@ -282,10 +276,14 @@ input, select, textarea {
 			border: solid 6px #ebebeb !important;
 		}
 
-		.image.case-study {
+		.case-study {
 			margin: 3px;
 			width: 90%;
-			border: solid 1px #ebebeb !important;
+			
+		}
+
+		.figure.case-study {
+			margin: 3px 3px 30px 3px;
 		}
 
 		.figure.consistent-height {
@@ -748,7 +746,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 0 0;
+				padding: 2em 0;
 			}
 
 		/* Footer */
@@ -832,9 +830,9 @@ input, select, textarea {
 
 		/* Image */
 
-			.image.featured {
+			/* .image.featured {
 				margin: 0 0 1.5em 0;
-			}
+			} */
 
 			.image.left {
 				max-width: 35%;
