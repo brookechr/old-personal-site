@@ -122,6 +122,7 @@ figcaption {
 	width: 70em;
 }
 
+
 article {
 	margin: 0 10vw;
 }
@@ -131,13 +132,18 @@ article {
 	background: #FFD1DC;
 	text-align: center;
 	margin-bottom: 1em;
-	padding: 1em 0;
+	padding: 3em 0 2em 0;
 }
 
 #footer {
 	background: #FFD1DC;
 	padding: 0.5em;
-	margin-top: 3em;
+	margin-top: auto;
+}
+
+video {
+	width: 30vw;
+	margin-top: 1em;
 }
 
 .featured {
@@ -153,45 +159,51 @@ article {
 }
 
 .case-study {
-	width: 30em;
+	width: 50vw;
 	display: inline-block;
+	margin-top: 1em;
+}
+
+.prototype {
+	width: 30vw;
+	display: inline-block;
+	margin: 0 2vw;
 }
 
 td {
-	height: 25em;
 	vertical-align: top;
+}
+
+table {
+	display: inline-block;
 }
 
 li {
 	list-style: none;
+	margin: 0.5em 0;
 }
+
+	li:first-child {
+		margin-top: 0;
+	}
 
 ul {
 	list-style: disc;
 	font-size: 1.3em;
 }
 
-	ul li {
-		margin: 0.5em 0;
+	ul.icons {
+		list-style: none;
+		text-align: center;
 	}
 
-		ul li:first-child {
-			margin-top: 0;
-		}
-
-
-ul.icons {
-	list-style: none;
-	text-align: center;
-}
-
-ul.icons li {
-	display: inline-block;
-	font-size: 2em;
-	position: relative;
-	padding: 1em 0.5em 0 0.5em;
-	margin: 0;
-}
+	ul.icons li {
+		display: inline-block;
+		font-size: 2em;
+		position: relative;
+		padding: 1em 0.5em 0 0.5em;
+		margin: 0;
+	}
 
 .icon {
 	text-decoration: none;
@@ -233,137 +245,95 @@ ul.icons li {
 	margin-bottom: 0;
 }
 
+#page-wrapper {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 1680px) {
 
-		body, input, textarea, select {
-			font-size: 13pt;
-		}
+	body, input, textarea, select {
+		font-size: 13pt;
+	}
 
-		#header > .container {
-			padding: 3em 0 1em 0;
-		}
-
-		.container {
-			width: 68em;
-		}
+	tr {
+		height: 25em;
+	}
 }
 
 @media screen and (max-width: 1280px) {
 
-		body, input, textarea, select {
-			font-size: 12pt;
-		}
+	body, input, textarea, select {
+		font-size: 12pt;
+	}
 
-		h2 br, h3 br, h4 br, h5 br, h6 br {
-			display: none;
-		}
+	h2 br, h3 br, h4 br, h5 br, h6 br {
+		display: none;
+	}
 
-		.image.left {
-			max-width: 50%;
-		}
-
-		.image.right {
-			max-width: 50%;
-		}
-
-
-		#header > .container {
-			padding: 3em 0 1em 0;
-		}
-
-		.container {
-			width: calc(100% - 80px);
-		}
+	tr {
+		height: 20em;
+	}
 }
 
 @media screen and (max-width: 980px) {
 
-		html, body {
-			overflow-x: hidden;
-		}
+	html, body {
+		overflow-x: hidden;
+	}
 
-		#header > .container {
-			padding: 3em 0 1em 0;
-		}
+	#page-wrapper {
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transition: -moz-transform 0.5s ease;
+		-webkit-transition: -webkit-transform 0.5s ease;
+		-ms-transition: -ms-transform 0.5s ease;
+		transition: transform 0.5s ease;
+		padding-bottom: 1px;
+	}
 
-		#page-wrapper {
-			-moz-backface-visibility: hidden;
-			-webkit-backface-visibility: hidden;
-			-ms-backface-visibility: hidden;
-			backface-visibility: hidden;
-			-moz-transition: -moz-transform 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease;
-			transition: transform 0.5s ease;
-			padding-bottom: 1px;
-		}
-
-		.container {
-			width: calc(100% - 100px);
-		}
+	tr {
+		height: 18em;
+	}
 }
 
 @media screen and (max-width: 736px) {
 
-		body, input, textarea, select {
-			font-size: 11pt;
+	body, input, textarea, select {
+		font-size: 11pt;
+	}
+
+	.image.left {
+		max-width: 35%;
+	}
+
+	.image.right {
+		max-width: 35%;
+	}
+
+	ul.actions li {
+		display: block;
+		margin: 1em 0 0 0;
+	}
+
+		ul.actions li:first-child {
+			margin-top: 0;
 		}
 
-		h2, h3, h4, h5, h6 {
-			font-size: 1.3em;
-			letter-spacing: 2px;
-			text-align: center;
-			margin: 0 0 1em 0;
-		}
+	#content > section,
+	#content > article {
+		margin: 3em 0 0 0;
+		padding: 3em 0 0 0;
+	}
 
-			h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;
-			}
+	.featured {
+		width: 80%;
+	}	
 
-		.image.left {
-			max-width: 35%;
-		}
-
-		.image.right {
-			max-width: 35%;
-		}
-
-		ul.actions li {
-			display: block;
-			margin: 1em 0 0 0;
-		}
-
-			ul.actions li:first-child {
-				margin-top: 0;
-			}
-
-		#content > section,
-		#content > article {
-			margin: 3em 0 0 0;
-			padding: 3em 0 0 0;
-		}
-
-		.container {
-			width: calc(100% - 40px);
-		}
-
-		.video-container {
-			position:relative;
-			padding-bottom:56.25%;
-			padding-top:30px;
-			height:0;
-			overflow:hidden;
-		}
-		
-		.video-container iframe, .video-container object, .video-container embed {
-			position:absolute;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-		}
-
-		.featured {
-			width: 80%;
-		}	
+	tr {
+		height: 16em;
+	}
 }
